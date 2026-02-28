@@ -1,5 +1,9 @@
 # Pure OCaml Wayland protocol library
 
+[!NOTE]
+This is a fork from mainstream [project](https://github.com/talex5/ocaml-wayland)
+which includes [RiverWM](https://github.com/codeberg.org/river/river) related protocols.
+
 * [API documentation][]
 
 Wayland is a communications protocol intended for use between processes on a single computer.

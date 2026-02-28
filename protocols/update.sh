@@ -14,3 +14,10 @@ wget https://gitlab.freedesktop.org/wayland/wayland-protocols/-/raw/main/staging
 wget https://gitlab.freedesktop.org/wlroots/wlr-protocols/-/raw/master/unstable/wlr-screencopy-unstable-v1.xml -O wlr-screencopy-unstable-v1.xml
 wget https://gitlab.freedesktop.org/wlroots/wlr-protocols/-/raw/master/unstable/wlr-layer-shell-unstable-v1.xml -O wlr-layer-shell-unstable-v1.xml
 wget https://gitlab.freedesktop.org/wayland/wayland/-/raw/main/protocol/wayland.xml -O ../lib/wayland.xml
+# River protocols
+wget https://codeberg.org/river/river/raw/branch/main/protocol/river-window-management-v1.xml -O river-window-management-v1.xml 
+wget https://codeberg.org/river/river/raw/branch/main/protocol/river-xkb-bindings-v1.xml -O river-xkb-bindings-v1.xml 
+wget https://codeberg.org/river/river/raw/branch/main/protocol/river-xkb-config-v1.xml -O river-xkb-config-v1.xml 
+wget https://codeberg.org/river/river/raw/branch/main/protocol/river-libinput-config-v1.xml -O river-libinput-config-v1.xml 
+wget https://codeberg.org/river/river/raw/branch/main/protocol/river-layer-shell-v1.xml -O river-layer-shell-v1.xml 
+wget https://codeberg.org/river/river/raw/branch/main/protocol/river-input-management-v1.xml -O river-layer-shell-v1.xml 
