@@ -1,6 +1,6 @@
 # Pure OCaml Wayland protocol library
 
-[!NOTE]
+> [!NOTE]
 This is a fork from mainstream [project](https://github.com/talex5/ocaml-wayland)
 which includes [RiverWM](https://github.com/codeberg.org/river/river) related protocols.
 

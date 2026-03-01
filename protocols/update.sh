@@ -6,7 +6,7 @@ wget https://gitlab.freedesktop.org/wayland/wayland-protocols/-/raw/main/unstabl
 wget https://gitlab.freedesktop.org/wayland/wayland-protocols/-/raw/main/unstable/pointer-constraints/pointer-constraints-unstable-v1.xml -O pointer-constraints-unstable-v1.xml
 wget https://gitlab.freedesktop.org/wayland/wayland-protocols/-/raw/main/stable/viewporter/viewporter.xml -O viewporter.xml
 wget https://gitlab.freedesktop.org/wlroots/wlroots/-/raw/master/protocol/server-decoration.xml -O server-decoration.xml
-wget https://cgit.freedesktop.org/mesa/mesa/plain/src/egl/wayland/wayland-drm/wayland-drm.xml -O wayland-drm.xml
+https://gitlab.freedesktop.org/mesa/mesa/-/raw/main/src/egl/wayland/wayland-drm/wayland-drm.xml -O wayland-drm.xml
 wget https://gitlab.freedesktop.org/wayland/wayland-protocols/-/raw/main/unstable/xdg-decoration/xdg-decoration-unstable-v1.xml -O xdg-decoration-unstable-v1.xml
 wget https://gitlab.freedesktop.org/wayland/wayland-protocols/-/raw/main/unstable/xdg-output/xdg-output-unstable-v1.xml -O xdg-output-unstable-v1.xml
 wget https://gitlab.freedesktop.org/wayland/wayland-protocols/-/raw/main/stable/tablet/tablet-v2.xml -O tablet-v2.xml
@@ -20,4 +20,4 @@ wget https://codeberg.org/river/river/raw/branch/main/protocol/river-xkb-binding
 wget https://codeberg.org/river/river/raw/branch/main/protocol/river-xkb-config-v1.xml -O river-xkb-config-v1.xml 
 wget https://codeberg.org/river/river/raw/branch/main/protocol/river-libinput-config-v1.xml -O river-libinput-config-v1.xml 
 wget https://codeberg.org/river/river/raw/branch/main/protocol/river-layer-shell-v1.xml -O river-layer-shell-v1.xml 
-wget https://codeberg.org/river/river/raw/branch/main/protocol/river-input-management-v1.xml -O river-layer-shell-v1.xml 
+wget https://codeberg.org/river/river/raw/branch/main/protocol/river-input-management-v1.xml -O river-input-management-v1.xml 

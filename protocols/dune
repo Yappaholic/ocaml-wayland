@@ -5,29 +5,29 @@
 
 ; River protocols
 (rule
-  (targets river_input_management_client.ml river_input_management_server.ml river_input_management_proto.ml)
-  (deps river-input-management.xml)
-  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto %{deps})))
+  (targets river_input_management_v1_client.ml river_input_management_v1_server.ml river_input_management_v1_proto.ml)
+  (deps river-input-management-v1.xml)
+  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto,Xdg_shell_proto %{deps})))
 (rule
-  (targets river_layer_shell_client.ml river_layer_shell_server.ml river_layer_shell_proto.ml)
-  (deps river-layer-shell.xml)
-  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto %{deps})))
+  (targets river_layer_shell_v1_client.ml river_layer_shell_v1_server.ml river_layer_shell_v1_proto.ml)
+  (deps river-layer-shell-v1.xml)
+  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto,Xdg_shell_proto,River_window_management_v1_proto %{deps})))
 (rule
-  (targets river_libinput_config_client.ml river_libinput_config_server.ml river_libinput_config_proto.ml)
-  (deps river-libinput-config.xml)
-  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto %{deps})))
+  (targets river_libinput_config_v1_client.ml river_libinput_config_v1_server.ml river_libinput_config_v1_proto.ml)
+  (deps river-libinput-config-v1.xml)
+  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto,Xdg_shell_proto,River_input_management_v1_proto %{deps})))
 (rule
-  (targets river_window_management_client.ml river_window_management_server.ml river_window_management_proto.ml)
-  (deps river-window-management.xml)
-  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto %{deps})))
+  (targets river_window_management_v1_client.ml river_window_management_v1_server.ml river_window_management_v1_proto.ml)
+  (deps river-window-management-v1.xml)
+  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto,Xdg_shell_proto %{deps})))
 (rule
-  (targets river_xkb_bindings_client.ml river_xkb_bindings_server.ml river_xkb_bindings_proto.ml)
-  (deps river-xkb-bindings.xml)
-  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto %{deps})))
+  (targets river_xkb_bindings_v1_client.ml river_xkb_bindings_v1_server.ml river_xkb_bindings_v1_proto.ml)
+  (deps river-xkb-bindings-v1.xml)
+  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto,Xdg_shell_proto,River_window_management_v1_proto %{deps})))
 (rule
-  (targets river_xkb_config_client.ml river_xkb_config_server.ml river_xkb_config_proto.ml)
-  (deps river-xkb-config.xml)
-  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto %{deps})))
+  (targets river_xkb_config_v1_client.ml river_xkb_config_v1_server.ml river_xkb_config_v1_proto.ml)
+  (deps river-xkb-config-v1.xml)
+  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto,Xdg_shell_proto,River_input_management_v1_proto %{deps})))
 
 ; Other protocols
 (rule
